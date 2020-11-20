@@ -1,0 +1,6 @@
+<script>
+    params = "?ids=" + "{{ invoice_ids }}"
+    window.open("{% url "manager:merge_invoices" %}" + params)
+    window.open("{% url "manager:dump_invoices" %}" + params)
+    window.location.href = document.referrer
+</script>

@@ -1,0 +1,14 @@
+{% include "admin/actions.html" %}
+<span id="sum_price_val" style="color:red;font-size:18px;font-weight:bold">共计：0元</span>
+<script>
+    $(document).ready(function () {
+        $("#action-toggle,input[class='action-select']").bind("change", function (e) {
+            let sum_price = 0;
+            $("#result_list > tbody > tr[class*='selected'] > td[class='field-price']").each(function () {
+                sum_price += parseFloat($(this).text());
+            })
+            console.log(sum_price)
+            $("#sum_price_val").text("共计：" + sum_price + "元")
+        })
+    })
+</script>
