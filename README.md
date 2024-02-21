@@ -9,7 +9,7 @@ Ghostscript（ https://www.ghostscript.com/download/gsdnld.html ）。
 
 Windows系统下在安装ImageMagick时记得勾选"Install development headers and libraries for C and C++ "选项。
 
-装好依赖后命令行执行`python manage.py runserver`启动，然后就可以在 http://127.0.0.1:8000 里访问了，默认账号密码都是`admin`。
+装好依赖后命令行执行`python manage.py runserver`启动，然后就可以在 http://127.0.0.1:8000/admin/ 里访问了，默认账号密码都是`admin`。
 
 ## 这个工具的起源
 
